@@ -14,4 +14,5 @@ end
 group :development do
   gem 'heroku_san'
   gem 'sqlite3'
+  gem "quiet_assets"
 end
