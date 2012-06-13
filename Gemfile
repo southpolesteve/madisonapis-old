@@ -4,6 +4,10 @@ gem 'pg'
 gem 'jquery-rails'
 gem "haml-rails", ">= 0.3.4"
 gem "bootstrap-sass", ">= 2.0.3"
+gem 'nokogiri'
+gem 'mechanize'
+gem 'pry-rails'
+gem 'jbuilder'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
