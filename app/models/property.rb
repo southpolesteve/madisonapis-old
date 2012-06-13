@@ -29,6 +29,4 @@ class Property
     @results.search('#propertyData tr')[1]
   end
 
-  def 
-
 end
