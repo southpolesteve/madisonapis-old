@@ -1,7 +1,7 @@
 class Park
   @@parks_url = "http://www.madisonapis.com/parks/"
 
-  attr_accessor :facilities, :id, :results
+  attr_accessor :name, :facilities, :id, :results, :address, :hours, :park_type, :acres, :restroom, :drinking_water
 
   def self.all
     parks = []
@@ -31,7 +31,11 @@ class Park
     @results.search('.link_list.facilities li').each do |facility|
       @facilities << facility.text
     end
-    @results.search('.body').first.text.match regex 
+    matches = @results.search('.body').first.text.match regex
+    matches.names.each do |name|
+      self.send(name+'=', matches[name])
+    end
+    self
   end
 
   private
