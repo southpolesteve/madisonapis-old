@@ -7,7 +7,7 @@ gem "bootstrap-sass", ">= 2.0.3"
 gem 'nokogiri'
 gem 'mechanize'
 gem 'pry-rails'
-gem 'jbuilder'
+gem 'rabl'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
