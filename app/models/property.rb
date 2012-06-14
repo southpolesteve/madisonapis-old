@@ -1,11 +1,6 @@
 class Property
-  attr_accessor :house_number, 
-                :street_direction,
-                :street_name,
-                :street_type,
-                :unit,
-                :uri,
-                :parcel_number
+  attr_accessor :house_number, :street_direction, :street_name, :street_type,
+                :unit, :uri, :parcel_number
 
   def initialize params
     @house_number = params[:house_number]
